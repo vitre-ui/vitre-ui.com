@@ -2,23 +2,23 @@
 
 ## Project Structure & Module Organization
 
-This repository currently contains a minimal website scaffold:
+This repository contains a minimal Vite website:
 
 - `README.md` describes the project.
 - `AGENTS.md` provides contributor and agent guidance.
+- `index.html` is the Vite entry point and contains the placeholder page.
+- `public/images/` contains static image assets served from `/images/...`.
 
-When adding implementation files, keep the layout predictable. Place source under `src/`, static assets under `public/` or `assets/`, and tests near the code they cover or under `tests/`. Example paths: `src/components/Header.tsx`, `public/favicon.svg`, `tests/homepage.test.ts`.
+When adding implementation files, keep the layout predictable. Place source under `src/` if the site grows, static assets under `public/`, and tests near the code they cover or under `tests/`.
 
 ## Build, Test, and Development Commands
 
-No package manager, framework, or build scripts are committed yet. Before adding commands, commit the relevant manifest, such as `package.json` and a lockfile.
+Use pnpm with the committed Vite scripts:
 
-Recommended command names once tooling exists:
-
-- `npm run dev` or `pnpm dev`: start the local development server.
-- `npm run build` or `pnpm build`: create the production build.
-- `npm test` or `pnpm test`: run the automated test suite.
-- `npm run lint` or `pnpm lint`: run style and static checks.
+- `pnpm install`: install dependencies.
+- `pnpm dev`: start the local Vite development server.
+- `pnpm build`: create the production build in `dist/`.
+- `pnpm preview`: preview the built site locally.
 
 Document new commands in `README.md` when introduced.
 
@@ -36,7 +36,7 @@ Add formatter and lint configuration with the first substantial source contribut
 
 ## Testing Guidelines
 
-No test framework is configured yet. When adding behavior, add tests with the chosen stack and make them runnable with one command, such as `npm test`.
+No test framework is configured yet. When adding behavior, add tests with the chosen stack and make them runnable with one command, such as `pnpm test`.
 
 Use test names that describe user-visible behavior, for example `homepage renders primary navigation`. Keep tests close to the feature, such as `src/components/Header.test.tsx`, or use `tests/` for integration coverage.
 
@@ -47,12 +47,16 @@ The current Git history only contains `Initial commit`, so no project-specific c
 Pull requests should include:
 
 - A concise summary of the change.
-- Any commands run, such as `npm test`.
+- Any commands run, such as `pnpm test`.
 - Screenshots or recordings for visible UI changes.
 - Linked issues or context when applicable.
 
 Keep pull requests focused. Separate infrastructure, design, and content changes when practical.
 
+## Deployment
+
+Cloudflare Pages should use `pnpm build` as the build command and `dist` as the output directory. Static assets in `public/` are copied to `dist/` by Vite and should be referenced from root-relative paths such as `/images/vitre-ui-logo-1920x1080.webp`.
+
 ## Agent-Specific Instructions
 
-Do not assume hidden build tooling exists. Inspect the repository before editing, keep changes narrowly scoped, and update this guide when new project structure, commands, or conventions are added.
+Inspect the repository before editing, keep changes narrowly scoped, and update this guide when new project structure, commands, or conventions are added.
