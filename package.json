@@ -11,5 +11,8 @@
   },
   "devDependencies": {
     "vite": "^7.0.0"
+  },
+  "dependencies": {
+    "vitre-css": "^1.2.0"
   }
 }

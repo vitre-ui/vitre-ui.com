@@ -7,6 +7,8 @@ This repository contains a minimal Vite website:
 - `README.md` describes the project.
 - `AGENTS.md` provides contributor and agent guidance.
 - `index.html` is the Vite entry point and contains the placeholder page.
+- `src/main.js` imports `vitre-css` and local site styles.
+- `src/site.css` contains the small amount of page-specific CSS.
 - `public/images/` contains static image assets served from `/images/...`.
 
 When adding implementation files, keep the layout predictable. Place source under `src/` if the site grows, static assets under `public/`, and tests near the code they cover or under `tests/`.
@@ -55,7 +57,7 @@ Keep pull requests focused. Separate infrastructure, design, and content changes
 
 ## Deployment
 
-Cloudflare Pages should use `pnpm build` as the build command and `dist` as the output directory. Static assets in `public/` are copied to `dist/` by Vite and should be referenced from root-relative paths such as `/images/vitre-ui-logo-1920x1080.webp`.
+Cloudflare Pages should use `pnpm build` as the build command and `dist` as the output directory. Static assets in `public/` are copied to `dist/` by Vite and should be referenced from root-relative paths such as `/images/vitre-ui-dark.webp`.
 
 ## Agent-Specific Instructions
 

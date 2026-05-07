@@ -7,6 +7,10 @@ settings:
 importers:
 
   .:
+    dependencies:
+      vitre-css:
+        specifier: ^1.2.0
+        version: 1.2.0
     devDependencies:
       vite:
         specifier: ^7.0.0
@@ -399,6 +403,9 @@ packages:
       yaml:
         optional: true
 
+  vitre-css@1.2.0:
+    resolution: {integrity: sha512-jSfQnnyESXqzakvOcIk/5Jy1+HZ5BvJtixIe4NUsblqrou7t8lbyYnWJhJrYapEKOCZwC/W2/O5Srg1+KrgZ8A==}
+
 snapshots:
 
   '@esbuild/aix-ppc64@0.27.7':
@@ -652,3 +659,5 @@ snapshots:
       tinyglobby: 0.2.16
     optionalDependencies:
       fsevents: 2.3.3
+
+  vitre-css@1.2.0: {}

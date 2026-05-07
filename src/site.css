@@ -1,0 +1,29 @@
+html,
+body {
+  block-size: 100%;
+  overflow: hidden;
+}
+
+body {
+  background: #08142f;
+}
+
+main {
+  display: flex;
+  min-block-size: 100%;
+  place-items: center;
+}
+
+main nav {
+  display: flex;
+  gap: var(--vitre-space-7);
+  justify-content: center;
+}
+
+@media (max-width: 640px) {
+  main nav {
+    flex-direction: column;
+    inline-size: min(100%, 18rem);
+    align-items: center;
+  }
+}
