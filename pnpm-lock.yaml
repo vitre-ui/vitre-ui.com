@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       vitre-css:
-        specifier: ^1.2.0
-        version: 1.4.0
+        specifier: ^1.5.0
+        version: 1.5.0
     devDependencies:
       vite:
         specifier: ^7.0.0
@@ -403,8 +403,8 @@ packages:
       yaml:
         optional: true
 
-  vitre-css@1.4.0:
-    resolution: {integrity: sha512-m44rHV8Wb++A/5M8+RP7Qr0l/J3/boKplzhOz9rAHjHMlmg2enOwoNLlpcuqCFFoyOw5lbFc10n41AsVD5jCaw==}
+  vitre-css@1.5.0:
+    resolution: {integrity: sha512-4pkMij28W9KiCi84mvtVJjnPVA/o52lFOvuNNZM6tEfdSTow7wxqkRR1NvsM75DavrYl+66NbjlXBJHs1NPBkw==}
 
 snapshots:
 
@@ -660,4 +660,4 @@ snapshots:
     optionalDependencies:
       fsevents: 2.3.3
 
-  vitre-css@1.4.0: {}
+  vitre-css@1.5.0: {}

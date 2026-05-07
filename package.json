@@ -1,6 +1,6 @@
 {
   "name": "vitre-ui-com",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "private": true,
   "type": "module",
   "packageManager": "pnpm@10.33.2",
@@ -13,6 +13,6 @@
     "vite": "^7.0.0"
   },
   "dependencies": {
-    "vitre-css": "^1.2.0"
+    "vitre-css": "^1.5.0"
   }
 }
