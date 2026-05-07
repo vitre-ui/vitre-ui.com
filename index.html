@@ -10,7 +10,7 @@
     >
     <style>
       :root {
-        color-scheme: light;
+        color-scheme: dark;
         --ink: #08142f;
         --blue: #0a84ff;
         --line: rgba(8, 20, 47, 0.12);
@@ -29,7 +29,7 @@
         margin: 0;
         overflow: hidden;
         color: var(--ink);
-        background: #f8fbff;
+        background: var(--ink);
       }
 
       main {
@@ -40,24 +40,27 @@
       }
 
       .hero {
-        position: relative;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-        background-image: url("/images/vitre-ui-logo-1920x1080.webp");
-        background-position: center;
-        background-size: 100% 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        max-width: 100vw;
+        max-height: 100vh;
+      }
+
+      .brand {
+        display: block;
+        width: auto;
+        height: auto;
+        max-width: 100vw;
+        max-height: 100vh;
       }
 
       .links {
-        position: absolute;
-        top: 75%;
-        left: 65%;
         display: flex;
         gap: 0.875rem;
         justify-content: center;
         width: min(100% - 2rem, 34rem);
-        transform: translate(-50%, -50%);
       }
 
       .links a {
@@ -99,7 +102,9 @@
   </head>
   <body>
     <main>
-      <div class="hero" role="img" aria-label="Vitre UI">
+      <div class="hero">
+        <img class="brand" src="/images/vitre-ui-dark.webp" alt="Vitre UI">
+
         <nav class="links" aria-label="Project packages">
           <a
             href="https://www.npmjs.com/package/vitre-css"
