@@ -7,10 +7,6 @@ settings:
 importers:
 
   .:
-    dependencies:
-      vitre-css:
-        specifier: ^1.5.1
-        version: 1.5.1
     devDependencies:
       vite:
         specifier: ^8.0.11
@@ -304,9 +300,6 @@ packages:
       yaml:
         optional: true
 
-  vitre-css@1.5.1:
-    resolution: {integrity: sha512-Lquo1PMFW0lQVVz5Ez/WysLKhU/Q3hBW42Yc2eFCOrrquNi+37epy5bunGCg9IHgVt/HdTKkw/38S0vUeyKQMg==}
-
 snapshots:
 
   '@emnapi/core@1.10.0':
@@ -500,5 +493,3 @@ snapshots:
       tinyglobby: 0.2.16
     optionalDependencies:
       fsevents: 2.3.3
-
-  vitre-css@1.5.1: {}

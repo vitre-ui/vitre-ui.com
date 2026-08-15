@@ -2,9 +2,10 @@
 
 ![Vitre UI](https://vitre-ui.com/images/vitre-ui-dark.webp)
 
-Placeholder website for Vitre UI, with links to the `vitre-css` and `vitre-js`
-npm packages. The site loads `vitre-css` from an unpkg CDN stylesheet so it
-also works when served as static HTML.
+Landing page for Vitre UI, linking to the documentation, the component
+reference, the `vitre-css` npm package, and the GitHub repository. The site
+loads `vitre.css` from an unpkg CDN stylesheet so it also works when served as
+static HTML.
 
 ## Development
 

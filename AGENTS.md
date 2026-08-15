@@ -6,8 +6,7 @@ This repository contains a minimal Vite website:
 
 - `README.md` describes the project.
 - `AGENTS.md` provides contributor and agent guidance.
-- `index.html` is the Vite entry point and contains the placeholder page.
-- `src/main.js` imports `vitre-css` and local site styles.
+- `index.html` is the Vite entry point and contains the whole page. It loads `vitre.css` from the unpkg CDN and links `src/site.css`.
 - `src/site.css` contains the small amount of page-specific CSS.
 - `public/images/` contains static image assets served from `/images/...`.
 
