@@ -1,13 +1,62 @@
-html,
-body {
-  block-size: 100%;
-  overflow: hidden;
-}
+/*
+ * Page-specific styles for vitre-ui.com.
+ * Everything else comes from vitre.css. Selectors use data-* attributes
+ * rather than class names, matching Vitre's own conventions.
+ */
 
 body {
   background: #08142f;
 }
 
-main nav {
+[data-site-hero] {
+  text-align: center;
+}
+
+[data-site-hero] img {
+  display: block;
+  inline-size: min(100%, 28rem);
+  margin-inline: auto;
+}
+
+/* The CDN lines are a few characters wider than the measure, which would
+   otherwise leave the snippet needing a horizontal scroll. Wrap at spaces
+   instead; these are the lines people copy. vitre.css sets `white-space: pre`
+   on `pre code`, so the inner element has to be overridden too. */
+[data-site-snippet],
+[data-site-snippet] code {
+  white-space: pre-wrap;
+}
+
+[data-site-tagline] {
+  color: var(--vitre-muted);
+  text-wrap: balance;
+}
+
+[data-site-links] {
   justify-content: center;
+  gap: var(--vitre-space-3);
+  margin-block-start: var(--vitre-space-5);
+}
+
+[data-site-links] a {
+  padding: 0.6rem 1.1rem;
+  border: 1px solid var(--vitre-border);
+  border-radius: var(--vitre-radius);
+  text-decoration: none;
+}
+
+[data-site-links] a:hover,
+[data-site-links] a:focus-visible {
+  border-color: var(--vitre-primary);
+  background: var(--vitre-surface-soft);
+}
+
+[data-site-links] a[data-site-primary] {
+  border-color: var(--vitre-primary);
+  background: color-mix(in oklab, var(--vitre-primary), transparent 86%);
+}
+
+[data-site-footer] {
+  text-align: center;
+  color: var(--vitre-subtle);
 }

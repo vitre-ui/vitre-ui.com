@@ -3,34 +3,58 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Vitre UI</title>
+    <title>Vitre UI - class-free CSS for semantic HTML</title>
     <meta
       name="description"
-      content="Vitre UI - class-free, style-free web with a high-end glass finish for semantic HTML."
+      content="Vitre UI is a single stylesheet that makes ordinary semantic HTML look polished by default, with no class or style attributes. Optional JavaScript adds behavior to the same markup."
     >
     <link rel="stylesheet" href="https://unpkg.com/vitre-css/vitre.css">
     <link rel="stylesheet" href="/src/site.css">
   </head>
   <body>
     <main>
-      <section aria-label="Vitre UI packages">
+      <header data-site-hero>
         <img src="/images/vitre-ui-dark.webp" alt="Vitre UI">
+        <p data-site-tagline>
+          The transparent style layer. Class-free, style-free web with a high-end finish.
+          Clear. Light. Vitre.
+        </p>
+      </header>
 
-        <nav aria-label="Project packages">
-          <a href="https://docs.vitre-ui.com/" target="_blank" rel="noopener noreferrer">
-            <button data-color="success">Documentation</button>
-          </a>
-          <a href="https://docs.vitre-ui.com/components.html" target="_blank" rel="noopener noreferrer">
-            <button>Components</button>
-          </a>
-          <a href="https://www.npmjs.com/package/vitre-css" target="_blank" rel="noopener noreferrer">
-            <button>vitre-css</button>
-          </a>
-          <a href="https://github.com/vitre-ui/vitre-css" target="_blank" rel="noopener noreferrer">
-            <button>GitHub</button>
-          </a>
-        </nav>
+      <nav data-site-links aria-label="Vitre UI links">
+        <a href="https://docs.vitre-ui.com/" data-site-primary>Documentation</a>
+        <a href="https://docs.vitre-ui.com/components.html">Components</a>
+        <a href="https://docs.vitre-ui.com/examples.html">Examples</a>
+        <a href="https://github.com/vitre-ui/vitre-css">Source</a>
+        <a href="https://www.npmjs.com/package/vitre-css">npm</a>
+      </nav>
+
+      <section aria-label="What Vitre UI is">
+        <p>
+          Vitre UI is one small package that makes raw semantic HTML look polished by default.
+          Headings, links, buttons, forms, tables, code, dialogs, and alerts all get modern light
+          and dark styling without a single <code>class</code> or <code>style</code> attribute.
+        </p>
+
+        <pre data-site-snippet><code>&lt;link rel="stylesheet" href="https://unpkg.com/vitre-css/vitre.css"&gt;</code></pre>
+
+        <p>
+          That is the whole setup. An optional second file, <code>vitre.js</code>, adds behavior to
+          the same markup &mdash; dismissible alerts, tabs, a theme toggle, splitters &mdash; and
+          every component still renders as readable content without it.
+        </p>
+
+        <pre data-site-snippet><code>&lt;script type="module" src="https://unpkg.com/vitre-css/vitre.js"&gt;&lt;/script&gt;</code></pre>
       </section>
     </main>
+
+    <footer data-site-footer>
+      <p>
+        <small>
+          MIT licensed. This page is static HTML styled entirely by
+          <code>vitre.css</code>, with no classes of its own.
+        </small>
+      </p>
+    </footer>
   </body>
 </html>
